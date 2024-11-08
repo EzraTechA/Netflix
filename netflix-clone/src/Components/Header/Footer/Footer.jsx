@@ -1,74 +1,59 @@
-import React from "react";
+import React from 'react'
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import "./Footer.css";
 
-function Footer() {
+const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer__links">
-        <ul>
-          <li>
-            <a href="#">FAQ</a>{" "}
-          </li>
-          <li>
-            <a href="#">Investor Relations</a>
-          </li>
-          <li>
-            <a href="#">Ways to Watch</a>
-          </li>
-          <li>
-            <a href="#">Corporate Information</a>
-          </li>
-          <li>
-            <a href="#">Only on Netflix</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">Help Center</a>
-          </li>
-          <li>
-            <a href="#">Jobs</a>
-          </li>
-          <li>
-            <a href="#">Terms of Use</a>
-          </li>
-          <li>
-            <a href="#">Contact us</a>
-          </li>
-        </ul>
-
-        <ul>
-          <li>
-            <a href="#">Account</a>
-          </li>
-          <li>
-            <a href="#">Redeem Gift Cards</a>
-          </li>
-          <li>
-            <a href="#">Privacy</a>
-          </li>
-          <li>
-            <a href="#">Speed Test</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">Media Center</a>
-          </li>
-          <li>
-            <a href="#">Buy Gift Cards</a>
-          </li>
-          <li>
-            <a href="#">Cookie Preferences</a>
-          </li>
-          <li>
-            <a href="#">Legal Notices</a>
-          </li>
-        </ul>
+    <div className='footer_outer_container'>
+      <div className='footer_inner_container'>
+        <div className='footer_icons'>
+          <FacebookOutlinedIcon />
+          <InstagramIcon />
+          <YouTubeIcon />
+        </div>
+        <div className='footer_data'>
+          <div>
+            <ul>
+              <li>Audio Description</li>
+              <li>Investor Relations</li>
+              <li>Legal Notice</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Help Center</li>
+              <li>Jobs</li>
+              <li>Cookie Preferences</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Gift Cards</li>
+              <li>Terms of Use</li>
+              <li>Corporate Information</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Media Center</li>
+              <li>Privacy</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div className='service_code'>
+          <p>
+            Service Code
+          </p>
+        </div>
+        <div className='copy-write'>
+          &copy; 1997-2024 Netflix, Inc.
+        </div>
       </div>
-     
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
